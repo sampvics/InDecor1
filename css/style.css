@@ -1,0 +1,54 @@
+:root {
+    --text-color:#00b8ef;
+    --primary-text-color:#fff;
+    --secondary-text-color:#000;
+    --btn-color: #3db2e0;
+    --forms-color: #94989b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+/*Cabeçalho*/
+/* classe principal */
+#container-primeira-foto{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+}
+
+#container-titulo{
+    color: #fff;
+
+}
+
+#titulo-principal{
+    color: #00b8ef;
+}
+
+.container-titulo .segundo-subtitulo{
+    color:#00b8ef;
+}
+
+.container-foto{
+
+
+}
+
+.container-foto .imagem-principal{
+
+}
+
+
+#formulario #section-subtitle{
+    color: #fff;
+}
+
+#form-control{
+    
+}
