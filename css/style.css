@@ -1,54 +1,285 @@
 :root {
-    --text-color:#00b8ef;
-    --primary-text-color:#fff;
-    --secondary-text-color:#000;
-    --btn-color: #3db2e0;
-    --forms-color: #94989b;
-}
+    --primary: #00baf2;
+    --secondary: #95989a;
+    --text-color: #fff;
+    --text-secondary: #000;
+    --text-tertiary: #5d5d5d;
+    }
+    
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-/*Cabeçalho*/
-/* classe principal */
-#container-primeira-foto{
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  body {
+    background-color:#fff;
+
+  }
+  
+  /* Cabeçalho principal com imagem */
+  .container-foto {
+    position: relative;
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  .imagem-principal {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+
+  }
+  
+  /* Container da introdução e formulário */
+  #container-primeira-foto {
+    position: absolute;
+    top: 0;
+    left: 20;
+    padding: 40px;
+    color:var(--text-color);
+    max-width: 50%;
+  }
+  
+  #titulo-principal {
+    font-size: 36px;
+    color: #00baf2;
+    font-weight: 700;
+  }
+  
+  .container-titulo h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .container-titulo p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .primeiro-subtitulo {
+    color: #00baf2;
+    font-weight: 600;
+  }
+  
+  /* Formulário */
+  #formulario {
+    background-color:var(--secondary);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    color: #000;
+  }
+  
+  .section-subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  textarea {
+    resize: none;
+    height: 60px;
+  }
+  
+  .btn {
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .btn:hover {
+    background-color: #0094b4;
+  }
+  
+  /* Título - O que você vai aprender */
+  .titulo-aprender {
+    text-align: center;
+    padding: 20px 10px 10px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: var(--text-tertiary);
+    height: 5;
+  }
+  
+  /* Ícones em círculo */
+  .fotos-circulos {
     display: flex;
     justify-content: center;
-    position: absolute;
-    width: 100%;
-    flex-direction: column;
-}
-
-#container-titulo{
-    color: #fff;
-
-}
-
-#titulo-principal{
-    color: #00b8ef;
-}
-
-.container-titulo .segundo-subtitulo{
-    color:#00b8ef;
-}
-
-.container-foto{
-
-
-}
-
-.container-foto .imagem-principal{
-
-}
-
-
-#formulario #section-subtitle{
-    color: #fff;
-}
-
-#form-control{
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .fotos-circulos div {
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .fotos-circulos img {
+    width: 160px;
+    height: 160px;
+    position: relative;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Local de destaque */
+  #container-segunda-foto {
+    background-color:var(--text-color);
+    padding: 60px 20px;
+    text-align: center;
     
-}
+  }
+  
+  #container-titulo2 h5 {
+    font-size: 28px;
+    color: #00b4d8;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .container-titulo2 h6 {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 700px;
+    margin: 0 auto 20px;
+  }
+  
+  .container-segunda-foto img {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 30px;
+    border-radius: 10px;
+    
+  }
+  
+  /* Seção de Ambientes */
+  #detalhes-ambiente {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  #detalhes1  h6 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .detalhes1-foto img{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .detalhes2-foto img{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  .detalhes3-foto img{
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  #detalhes2, #detalhes3 {
+    text-align: left;
+    max-width: 600px;
+  }
+  
+  .segundo-subtitulo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Seção de inscrição final */
+  #container-terceira-foto img{
+    background-color:#fff;
+    color: var(--text-tertiary);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  #container-terceira-foto h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color:var(--secondary);
+  }
+  
+  #container-terceira-foto p {
+    background-color: #00b4d8;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+  
+  #container-terceira-foto p:hover {
+    background-color: #0094b4;
+  }
+  
+  .ultima-foto img {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Rodapé */
+  #footer {
+    background-color:#fff;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer-final h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color:var(--text-tertiary);
+  }
+  .footer-final h2{
+    font-size: 20px;
+    font-weight: normal;
+    color:var(--text-tertiary);
+  }
+  .footer-final h3{
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--text-tertiary);
+
+  }
